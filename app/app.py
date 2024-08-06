@@ -31,10 +31,10 @@ def add_company_tweets_to_json(company, tweets):
 	"""Provides a company name and relevant Tweets we are working with to the JSON prompt"""
 	with open('./RISE.json', "r") as json_file:
 		data = json.load(json_file)
-		if 'COMPANY' in data:
-			data['COMPANY'] = company
-		if 'RISE.INPUT' in data:
-			data['RISE.INPUT'] = tweets
+		if "COMPANY" in data:
+			data["COMPANY"] = company
+		if "INPUT" in data:
+			data["INPUT"] = tweets
 	return data
 
 
@@ -44,7 +44,9 @@ def add_company_tweets_to_json(company, tweets):
 @app.route('/ask', methods=['POST'])
 def ask():
 	
-	data = add_company_tweets_to_json(request.get_json()['COMPANY'], request.get_json()['INPUT'])
+	data = add_company_tweets_to_json(request.get_json()["COMPANY"], request.get_json()["INPUT"])
+
+	print(data)
 	return ask_gemini(json_to_string_with_keys(data))
 
 if __name__ == '__main__':
