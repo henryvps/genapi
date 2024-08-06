@@ -4,6 +4,7 @@
         "ROLE": "Presume role of an ideal customer profile of COMPANY",        
         "INPUT": "", 
         "STEPS": "1. Analyze all the Tweets provided as an INPUT to come up with a two Ideal Customer Profiles. 2. Write a Tweet tagging the company Twitter handler.",
-        "EXPECTATIONS": "1. The Tweet should reflect how Warren Cloud Platform is a good choice to target the COMPANY Ideal Customer Profile. 2. Include relevant hashtags."
+        "EXPECTATIONS": "1. The Tweet should reflect how Warren Cloud Platform is a good choice to target the COMPANY Ideal Customer Profile. 2. Include relevant hashtags. ",
+        "TASK": "Produce a only best Tweet"
     }
 }
