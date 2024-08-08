@@ -43,8 +43,7 @@ def add_company_tweets_to_json(company, tweets):
 
 @app.route('/ask', methods=['POST'])
 def ask():
-	
-	data = add_company_tweets_to_json(request.get_json()["COMPANY"], request.get_json()["INPUT"])
+	data = add_company_tweets_to_json(request.get_json()["COMPANY_TWITTER_HANDLE"], request.get_json()["COMPANY_TWEETS"])
 
 	print(data)
 	return ask_gemini(json_to_string_with_keys(data))
