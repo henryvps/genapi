@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 FROM --platform=$BUILDPLATFORM python:3.10-alpine AS builder
-VOLUME [ "/app" ]
+
 
 WORKDIR /app
 
@@ -11,6 +11,7 @@ RUN --mount=type=cache,target=/root/.cache/pip \
 COPY . /app
 
 ENTRYPOINT ["python3"]
+RUN chmod +x app.py
 CMD ["app.py"]
 
 FROM builder as dev-envs
