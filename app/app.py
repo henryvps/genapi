@@ -31,10 +31,10 @@ def add_company_tweets_to_json(company, tweets):
 	"""Provides a company name and relevant Tweets we are working with to the JSON prompt"""
 	with open('./RISE.json', "r") as json_file:
 		data = json.load(json_file)
-		if "COMPANY" in data:
-			data["COMPANY"] = company
-		if "INPUT" in data:
-			data["INPUT"] = tweets
+		if "COMPANY_TWITTER_HANDLE" in data:
+			data["COMPANY_TWITTER_HANDLE"] = company
+		if "COMPANY_TWEETS" in data:
+			data["COMPANY_TWEETS"] = tweets
 	return data
 
 
