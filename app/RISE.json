@@ -1,41 +1,8 @@
 {
     "COMPANY_TWITTER_HANDLE": "",
     "COMPANY_TWEETS": "",
-    "WARREN_CLOUD_PLATFORM": "
-    Warren Cloud Platform is a full self-service cloud computing platform for data centers and hosting providers. Functionally rich, technologically modern and architecturally reliable turnkey cloud commercialization solution delivered as a Service and driven by your success to compete in the evergrowing IaaS market.  
-    
-    Warren Cloud Platform is an alternative to Virtuozzo, VMware, Proxmox, OpenStack, WHMCS. 
-    Warren is provided as a managed service. 
-    Warren Cloud Platform is website available at https//warren.io. It is kept up and running updated with no downtime twice a month. 
-    Warren runs on customers hardware and in customers data center or colocation space. 
-    
-    Here's a breakdown of Warren Cloud Platform's key features:
-
-Core Cloud Services:
-
-Virtualization: Support for all major OS including Windows.
-Storage: Ceph-based block & object storage, live snapshots, easy backups.
-Networking: Software-defined with network function virtualization.
-High Availability: Zero-downtime VM migration, disaster recovery.
-Management & Billing:
-
-Full Control: Manage clients, billing, payments, credits, tax, discounts.
-Support Tools: Impersonate users for first-level support.
-Automation: Admin API for management tasks.
-Marketing: Manage coupon codes.
-Payment Integrations: Credit cards, digital wallets, invoicing.
-Platform Advantages:
-
-Ease of Use: Fast, intuitive single-page web interface.
-Scalability: Designed for high availability, reliability, growth.
-Observability: Prometheus-based monitoring, Grafana dashboard.
-API-Driven: 100% functionality accessible via RESTful API.
-Multi-Cluster: GALS-based architecture for seamless upgrades.
-Customizable: Theming & multi-reseller options.
-Turnkey: Installed and deployed by Warren team, fast time to market.
-This list highlights the core capabilities of Warren Cloud Platform, showcasing its strength in delivering a comprehensive, user-friendly, and scalable cloud solution.
-    
-    ","RISE": {
+    "WARREN_CLOUD_PLATFORM": "Warren Cloud Platform is a full self-service cloud computing platform for data centers and hosting providers. Functionally rich, technologically modern and architecturally reliable turnkey cloud commercialization solution delivered as a Service and driven by your success to compete in the evergrowing IaaS market. Warren Cloud Platform is an alternative to Virtuozzo, VMware, Proxmox, OpenStack, WHMCS. Warren is provided as a managed service. Warren Cloud Platform is website available at https//warren.io. It is kept up and running updated with no downtime twice a month. Warren runs on customers hardware and in customers data center or colocation space. Here's a breakdown of Warren Cloud Platform's key features: Core Cloud Services: Virtualization: Support for all major OS including Windows.Storage: Ceph-based block & object storage, live snapshots, easy backups. Networking: Software-defined with network function virtualization.High Availability: Zero-downtime VM migration, disaster recovery. Management & Billing: Full Control: Manage clients, billing, payments, credits, tax, discounts.Support Tools: Impersonate users for first-level support. Automation: Admin API for management tasks. Marketing: Manage coupon codes. Payment Integrations: Credit cards, digital wallets, invoicing. Platform Advantages: Ease of Use: Fast, intuitive single-page web interface. Scalability: Designed for high availability, reliability, growth. Observability: Prometheus-based monitoring, Grafana dashboard. API-Driven: 100% functionality accessible via RESTful API. Multi-Cluster: GALS-based architecture for seamless upgrades.Customizable: Theming & multi-reseller options. Turnkey: Installed and deployed by Warren team, fast time to market. This list highlights the core capabilities of Warren Cloud Platform, showcasing its strength in delivering a comprehensive, user-friendly, and scalable cloud solution.",
+    "RISE": {
         "ROLE": "Presume role of a Warren Cloud Platform co-founder who reaches out to COMPANY",
         "STEPS": "1. Analyze all the Tweets provided as an INPUT to come up with a one Ideal Customer Profiles. 2. Write a Tweet tagging the company Twitter COMPANY_TWITTER_HANDLE.",
         "EXPECTATIONS": "1. Limit the Tweet to 160 characters. 2. The Tweet should reflect how Warren Cloud Platform is a good choice to target the company Target Buyer Persona. 3. Include relevant hashtags. 4. Do not be overly salesy. 5. Try to be more specific to the COMPANY potential painpoints based on COMPANY_TWEETS.",
