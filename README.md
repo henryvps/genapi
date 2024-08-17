@@ -1,57 +1,33 @@
-## Compose sample application
-### Python/Flask application
+# GenAPI for Warren.io
 
-Project structure:
-```
-.
-├── compose.yaml
-├── app
-    ├── Dockerfile
-    ├── requirements.txt
-    └── app.py
+## Create an article for SEO purposes
+[x] Favourite articles of FreshRSS from an iOS app or web interface.
+[x] Fetch favourite articles from FreshRSS and insert to Baserow database table.
+[] Fetch RACE prompting instructions from Baserow table.
+[] Fetch unpublished articles from Baserow table.
+[] Inject original unpublished article into RACE prompt instructions.
+[] Send RACE prompt to Gemini Pro 1.5 to return Warren version.
+[] Populate Warren oriented article into Baserow database.
+[] N8N will publish on Warren.io every day.
+[] N8N will notify Slack channel to review and unpublish in case doesn't meet quality standards.
+[] Create Linkedin post for manual posting
+[] Create Tweets to post automatically to X
 
-```
 
-[_compose.yaml_](compose.yaml)
-```
-services: 
-  web: 
-    build:
-     context: app
-     target: builder
-    ports: 
-      - '8000:8000'
-```
+
+
 
 ## Deploy with docker compose
-
 ```
-$ docker compose up -d
-[+] Building 1.1s (16/16) FINISHED
- => [internal] load build definition from Dockerfile                                                                                                                                                                                       0.0s
-    ...                                                                                                                                         0.0s
- => => naming to docker.io/library/flask_web                                                                                                                                                                                               0.0s
-[+] Running 2/2
- ⠿ Network flask_default  Created                                                                                                                                                                                                          0.0s
- ⠿ Container flask-web-1  Started
+$ chmod +x ./restart.sh
+$ ./restart.sh
 ```
 
-## Expected result
-
-Listing containers must show one container running and the port mapping as below:
-```
-$ docker compose ps
-NAME                COMMAND             SERVICE             STATUS              PORTS
-flask-web-1         "python3 app.py"    web                 running             0.0.0.0:8000->8000/tcp
-```
-
-After the application starts, navigate to `http://localhost:8000` in your web browser or run:
-```
-$ curl localhost:8000
-Hello World!
-```
-
+## Shutdown services
 Stop and remove the containers
 ```
 $ docker compose down
 ```
+
+## Expected behavior 
+
